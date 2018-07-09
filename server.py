@@ -53,7 +53,7 @@ def getHighscore():
 
 
 @app.route('/set-score/', methods=["POST"])
-def setHighscore():
+def setScore():
     print(request.form[constants.SCORE_KEY])
     return "", status.HTTP_202_ACCEPTED
 
